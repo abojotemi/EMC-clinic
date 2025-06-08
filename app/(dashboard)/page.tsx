@@ -110,7 +110,7 @@ const Home = () => {
         <div>
           <Card className="border-2 border-gray-400 h-full">
             <CardHeader className="text-xl text-primary">
-              <CardTitle>Today's Appointments</CardTitle>
+              <CardTitle>Today&apos;s Appointments</CardTitle>
             </CardHeader>
             <hr className="border-2 border-gray-400" />
             {todaysAppointments.map((appointment, index) => (

@@ -7,13 +7,13 @@ import {
   SidebarGroupContent,
   SidebarHeader,
   SidebarMenu,
-  SidebarMenuButton,
+  
   SidebarMenuItem,
   SidebarTrigger,
   useSidebar,
 } from "./ui/sidebar";
-import { FaAngleLeft, FaHouseChimney } from "react-icons/fa6";
-import { FaBed, FaHamburger } from "react-icons/fa";
+import {  FaHouseChimney } from "react-icons/fa6";
+import { FaBed } from "react-icons/fa";
 import { MdPersonAddAlt1 } from "react-icons/md";
 import { FaLaptopMedical } from "react-icons/fa";
 import { FaCreditCard } from "react-icons/fa6";
@@ -22,8 +22,6 @@ import { FaCircleRadiation } from "react-icons/fa6";
 import { RiFirstAidKitFill } from "react-icons/ri";
 import { FaChartBar } from "react-icons/fa";
 import { FaBrain } from "react-icons/fa6";
-import Link from "next/link";
-import { Button } from "./ui/button";
 import { NavItem } from "./nav-item";
 
 const items = [
