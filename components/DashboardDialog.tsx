@@ -65,7 +65,7 @@ const DashboardDialog = ({
           </div>
           <div className="p-3 flex justify-end">
             <Link
-              href="/patients"
+              href="/patient"
               className="bg-primary text-white p-3 text-lg rounded cursor-pointer"
             >
               View
