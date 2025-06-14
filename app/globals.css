@@ -42,9 +42,9 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  --color-primary: #6637D4;
+  --color-primary: #1E88E5;
   --color-light-primary: #F5F0FF;
-  --color-bg-gray: #ECECEE;
+  --color-bg-blue: #F4F7FB;
   --color-dark-purple: #6200A3;
   --color-main-blue: #3C56FB;
   --color-light-red: #FFDDDD;
@@ -85,9 +85,9 @@
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
 
-  --primary: #6637D4;
+  --primary: #1E88E5;
   --light-primary: #F5F0FF;
-  --bg-gray: #ECECEE;
+  --bg-blue: #F4F7FB;
   --dark-purple: #6200A3;
   --main-blue: #3C56FB;
   --light-red: #FFDDDD;
@@ -100,15 +100,15 @@
   --dark-blue: #375EA7;
   --action-gray: #7C7979;
 
-  --sidebar: #6637D4;
+  --sidebar: #1E88E5;
   --sidebar-foreground: white;
   --sidebar-primary: white;
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: #6637D4;
+  --sidebar-accent-foreground: #1E88E5;
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  
+
 }
 
 .dark {
@@ -168,7 +168,7 @@ body {
     @apply px-6 py-4 bg-white h-full shadow-lg rounded-lg max-w-full overflow-x-hidden;
   }
   .dashboard-card{
-    @apply mx-auto w-full h-full bg-light-primary text-gray-600 relative;
+    @apply mx-auto w-full h-full bg-primary/20  text-gray-600 relative;
   }
   .dashboard-card-footer{
     @apply absolute -right-0 bottom-1 text-blue-500 cursor-pointer hover:underline;

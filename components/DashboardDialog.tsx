@@ -40,7 +40,7 @@ const DashboardDialog = ({
     <div className="w-full h-full">
       <Dialog >
         <DialogTrigger className="w-full h-full">{children}</DialogTrigger>
-        <DialogContent className="p-0 rounded-none border border-black h-fit">
+        <DialogContent className="p-0 rounded-none border border-black max-h-fit">
           <DialogHeader className="bg-primary text-white h-12 p-3">
             <DialogTitle className="tracking-wider">
               PATIENTS OVERVIEW

@@ -35,16 +35,15 @@ export default async function RootLayout({
       >
         <div className="w-screen flex overflow-hidden">
           <div>
-          <SidebarProvider defaultOpen={defaultOpen}>
-            <AppSidebar />
-          </SidebarProvider>
+            <SidebarProvider defaultOpen={defaultOpen}>
+              <AppSidebar />
+            </SidebarProvider>
           </div>
           <div className="w-full flex flex-col flex-1">
             <div className="static top-0 h-20">
               <Navbar />
-
             </div>
-              <div className="p-4 flex-1 bg-bg-gray">{children}</div>
+            <div className="p-4 flex-1 bg-bg-blue">{children}</div>
           </div>
         </div>
       </body>

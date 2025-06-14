@@ -60,7 +60,7 @@ const Home = () => {
             <CardHeader className="text-xl text-primary">
               <CardTitle>Top Treatments</CardTitle>
             </CardHeader>
-            <hr className="h-1 bg-gray-400" />
+            <hr className="h-1 bg-dark-gray" />
             {topTreatments.map((treatment, index) => (
               <CardContent
                 key={index}
@@ -76,7 +76,7 @@ const Home = () => {
             <CardHeader className="text-xl text-primary">
               <CardTitle>Top Patients</CardTitle>
             </CardHeader>
-            <hr className="h-1 bg-gray-400" />
+            <hr className="h-1 bg-dark-gray" />
             {topPatients.map((patient, index) => (
               <CardContent
                 key={index}
@@ -94,7 +94,7 @@ const Home = () => {
             <CardHeader className="text-xl text-primary">
               <CardTitle>Top Appointments</CardTitle>
             </CardHeader>
-            <hr className="h-1 bg-gray-400" />
+            <hr className="h-1 bg-dark-gray" />
             {topAppointments.map((appointment, index) => (
               <CardContent
                 key={index}
@@ -114,8 +114,15 @@ const Home = () => {
             </CardHeader>
             <hr className="border-2 border-gray-400" />
             {todaysAppointments.map((appointment, index) => (
-              <DashboardDialog name={appointment.name} id={appointment.id} key={index}>
-                <CardContent key={index} className="dashboard-appointment-card">
+              <DashboardDialog
+                name={appointment.name}
+                id={appointment.id}
+                key={index}
+              >
+                <CardContent
+                  key={index}
+                  className="dashboard-appointment-card cursor-pointer hover:shadow-lg transition-transform"
+                >
                   <p>{appointment.name}</p>
                   <p>{appointment.id}</p>
                   <p
@@ -149,7 +156,7 @@ const Home = () => {
             <Sheet>
               <SheetTrigger>
                 <div
-                  className={`flex max-sm:justify-center p-2 rounded items-center space-x-3 bg-red-200 text-red-700`}
+                  className={`cursor-pointer flex max-sm:justify-center p-2 rounded items-center space-x-3 bg-red-200 text-red-700`}
                 >
                   <FaPlus className="size-7" />
                   <span>Add Patient</span>
@@ -157,10 +164,10 @@ const Home = () => {
               </SheetTrigger>
               <SheetContent>
                 <SheetHeader>
-                  <SheetTitle className="text-primary">Add Emergency Patient</SheetTitle>
-                  <SheetDescription>
-                    
-                  </SheetDescription>
+                  <SheetTitle className="text-primary">
+                    Add Emergency Patient
+                  </SheetTitle>
+                  <SheetDescription></SheetDescription>
                 </SheetHeader>
               </SheetContent>
             </Sheet>
@@ -170,7 +177,7 @@ const Home = () => {
             <Sheet>
               <SheetTrigger>
                 <div
-                  className={`flex max-sm:justify-center p-2 rounded items-center space-x-3 bg-blue-200 text-blue-700`}
+                  className={`cursor-pointer flex max-sm:justify-center p-2 rounded items-center space-x-3 bg-blue-200 text-blue-700`}
                 >
                   <FaPlus className="size-7" />
                   <span>Book</span>
@@ -178,7 +185,9 @@ const Home = () => {
               </SheetTrigger>
               <SheetContent>
                 <SheetHeader>
-                  <SheetTitle className="text-primary">Book an Appointment</SheetTitle>
+                  <SheetTitle className="text-primary">
+                    Book an Appointment
+                  </SheetTitle>
                   <SheetDescription></SheetDescription>
                 </SheetHeader>
               </SheetContent>
@@ -186,10 +195,10 @@ const Home = () => {
           </CardContent>
           <CardContent className="quick-actions">
             <p>Generate A Bill</p>
-            <Sheet >
+            <Sheet>
               <SheetTrigger>
                 <div
-                  className={`flex max-sm:justify-center p-2 rounded items-center space-x-3 bg-gray-200 text-gray-700`}
+                  className={`cursor-pointer flex max-sm:justify-center p-2 rounded items-center space-x-3 bg-gray-200 text-gray-700`}
                 >
                   <FaPlus className="size-7" />
                   <span>Generate</span>
@@ -197,10 +206,10 @@ const Home = () => {
               </SheetTrigger>
               <SheetContent>
                 <SheetHeader>
-                  <SheetTitle className="text-primary">Generate a Bill</SheetTitle>
-                  <SheetDescription>
-                    
-                  </SheetDescription>
+                  <SheetTitle className="text-primary">
+                    Generate a Bill
+                  </SheetTitle>
+                  <SheetDescription></SheetDescription>
                 </SheetHeader>
               </SheetContent>
             </Sheet>
@@ -237,7 +246,6 @@ const Home = () => {
           </div>
         </Card>
       </div>
-      
     </div>
   );
 };

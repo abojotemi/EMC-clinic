@@ -7,12 +7,11 @@ import {
   SidebarGroupContent,
   SidebarHeader,
   SidebarMenu,
-  
   SidebarMenuItem,
   SidebarTrigger,
   useSidebar,
 } from "./ui/sidebar";
-import {  FaHouseChimney } from "react-icons/fa6";
+import { FaHouseChimney } from "react-icons/fa6";
 import { FaBed } from "react-icons/fa";
 import { MdPersonAddAlt1 } from "react-icons/md";
 import { FaLaptopMedical } from "react-icons/fa";
@@ -82,7 +81,7 @@ const AppSidebar = () => {
   return (
     <div className="">
       <div className="h-fit w-fit">
-        <Sidebar collapsible="icon" variant="floating" className="bg-bg-gray">
+        <Sidebar collapsible="icon" variant="floating" className="bg-bg-blue">
           <SidebarHeader>
             <div className="flex items-center gap-2">
               {open && (
@@ -106,7 +105,6 @@ const AppSidebar = () => {
                         label={item.title}
                         url={item.url}
                       />
-
                     </SidebarMenuItem>
                   ))}
                 </SidebarMenu>
